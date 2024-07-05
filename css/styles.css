@@ -20,7 +20,7 @@ body{
 
  .container{
    max-width: 1158px;
-   padding: o 15px;
+   padding: 0 15px;
    margin: 0 auto;
  }
 
@@ -116,12 +116,19 @@ color: #434455;
    background-color: #2e2f42;
 }
 
+.hero-container { 
+   padding: 188px 472px 292px;
+}
 .hero-title {
 font-size: 56px;
 line-height: 1.07;
 letter-spacing: 0.02em;
 text-align: center;
 color: #fff;
+max-width: 496px;
+margin: 0 auto;
+margin-bottom: 48px;
+
 }
 
 .hero-order-btn {
@@ -146,6 +153,8 @@ background-color: #404bbf;
 /*Components*/
 
 .components {
+   padding-top: 120px;
+   padding-bottom: 120px;
 }
 .components-list {
 }
@@ -157,6 +166,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
+margin-bottom: 8px;
 }
 
 .components-item-text {
