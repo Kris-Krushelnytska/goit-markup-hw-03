@@ -13,6 +13,10 @@ body{
    margin: 0;
  }
 
+ img {
+   display: block;
+ }
+
  a{
     text-decoration: none;
  }
@@ -112,12 +116,16 @@ color: #434455;
    background-color: #2e2f42;
 }
 /*HERO*/
+
 .hero {
    background-color: #2e2f42;
+   padding: 472px 192px ;
+   
 }
 
 .hero-container { 
-   padding: 188px 472px 292px;
+ 
+ 
 }
 .hero-title {
 font-size: 56px;
@@ -140,6 +148,9 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 color: #fff;
 cursor: pointer;
+display: block;
+margin: 0 auto;
+padding: 32px 16px;
 }
 
 .hero-order-btn:hover{
@@ -157,8 +168,14 @@ background-color: #404bbf;
    padding-bottom: 120px;
 }
 .components-list {
+   display: flex;
+   gap: 24px;
+   padding-right: 156px;
+   padding-left: 156px;
+   
 }
 .components-item {
+   width: calc((100% - 3* 24px) /4);
 }
 .components-subtitle {
 font-weight: 500;
@@ -182,7 +199,7 @@ color: #434455;
 
 .team {
   background-color: #F4F4FD ; 
-  
+
 }
 .team-title {
 text-transform: capitalize;
@@ -190,20 +207,29 @@ font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-align: center;
+color: #2e2f42;
+margin: 0 auto;
+margin-bottom: 72px;
 
-color: #2e2f42
 }
 
 .team-list{
+   display: flex;
+   gap: 24px;
+   padding-top: 232px;
+   padding-bottom: 120px;
 
 }
 
 
 .team-item {
 background-color: #FFFFFF;
+width: calc((100% -3 * 24px ) /4 );
 }
 
 .team-image {
+   margin-bottom: 32px;
+ 
 }
 
 .team-subtitle {
@@ -213,6 +239,7 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
+margin-bottom: 8px;
 }
 
 .team-text {
@@ -221,12 +248,14 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 text-align: center;
 color: #434455;
+margin-bottom: 32px;
 }
 
 /*PORTFOLIO*/
 
 .portfolio {
    background-color: #FFFFFF;
+   padding-top: 120px;
 }
 
 .portfolio-title {
@@ -236,15 +265,21 @@ line-height: 1.11;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
+margin-bottom: 72px;
 }
 
 .portfolio-list {
+   display: flex;
+   
+   flex-wrap: wrap;
+   gap: 48px 24px;
 }
 
 .portfolio-item {
 }
 
 .portfolio-image {
+   margin-bottom: 64px;
 }
 
 .portfolio-subtitle {
@@ -264,6 +299,10 @@ color: #434455;
 
 /*FOOTER*/
 
+.container-footer {
+   display: block;
+   margin: 0 auto;
+}
 .page-footer {
    background-color: #2e2f42;
 }
@@ -274,5 +313,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #f4f4fd;
+width: 264px;
+
 
 }
